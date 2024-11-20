@@ -8,87 +8,104 @@
     <meta name="keywords" content="Вправи, Тренажерний зал, Фітнес, Тренування, Кросфіт, Спорт">
     <meta name="author" content="Павло Гусятинський">
     <title>Fitgram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>Fitgram</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Реєстрація</a></li>
-                <li><a href="#">Увійти в акаунт</a></li>
-                <li><a href="#">Спробувати без реєстрації</a></li>
+    <header class="header">
+        <h1 class="header__title">Fitgram</h1>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Реєстрація</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Увійти в акаунт</a></li>
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Спробувати без реєстрації</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Які є плюси у використанні Fitgram?</h2>
-        <ol>
-            <li>Ви можете слідкувати за своєю тренувальною програмою</li>
-            <li>Ви будете отримати підсказки по покращенню у фітнесі</li>
-            <li>Ви зможете наблюдати за своїм прогресом</li>
-        </ol>
+    <main class="main">
+        <section class="benefits">
+            <h2 class="benefits__title">Які є плюси у використанні Fitgram?</h2>
+            <ol class="benefits__list">
+                <li class="benefits__item">Ви можете слідкувати за своєю тренувальною програмою</li>
+                <li class="benefits__item">Ви будете отримати підсказки по покращенню у фітнесі</li>
+                <li class="benefits__item">Ви зможете слідкувати за своїм прогресом</li>
+            </ol>
+        </section>
 
+        <section class="services">
+            <h3 class="services__title">Використовуйте наші послуги, щоб отримати більше результатів у фітнесі</h3>
+            <figure class="services__figure">
+                <a href="https://www.vecteezy.com/png/9314343-man-character-training-at-the-gym-vector-illustration"
+                    target="_blank"><img src="img/2536x2236_man_training.png"
+                        alt="Зображення чоловіка, який робить присяд зі штангою" width="507" height="447"
+                        class="services__image"></a>
+                <figcaption class="services__caption">Зображення чоловіка, який робить присяд зі штангою</figcaption>
+            </figure>
+            <p class="services__text">Тренування стануть на багато веселішими</p>
 
-        <h3>Використовуйте наші послуги, щоб отримати більше результатів у фітнесі</h3>
-        <figure>
-            <a href="https://www.vecteezy.com/png/9314343-man-character-training-at-the-gym-vector-illustration"
-                target="_blank"><img src="img/2536x2236_man_training.png"
-                    alt="Зображення чоловіка, який робить присяд зі штангою" width="507" height="447"></a>
-            <figcaption>Зображення чоловіка, який робить присяд зі штангою</figcaption>
-        </figure>
-        <p>Тренування стануть на багато веселішими</p>
+            <figure class="services__figure">
+                <img src="img/467x383_message.png" alt="Зображення повідомлення з підсказкою" width="467" height="383"
+                    class="services__image">
+                <figcaption class="services__caption">Зображення повідомлення з підсказкою</figcaption>
+            </figure>
+            <p class="services__text">Отримуйте допомогу від нашого застосунку</p>
 
-        <figure>
-            <img src="img/467x383_message.png" alt="Зображення повідомлення з підсказкою" width="467" height="383">
-            <figcaption>Зображення повідомлення з підсказкою</figcaption>
-        </figure>
-        <p>Отримуйте допомогу від нашого застосунку</p>
+            <figure class="services__figure">
+                <a href="https://www.vecteezy.com/png/10135733-fat-women-cardio-exercises-and-fitness-training-concept-for-weight-loss-of-fat-burning"
+                    target="_blank"><img src="img/4192x5081_woman_training.png" alt="Зображення жінки, яка тренується"
+                        width="419" height="508" class="services__image"></a>
+                <figcaption class="services__caption">Зображення жінки, яка тренується</figcaption>
+            </figure>
+            <p class="services__text">Абсолютно безкоштовний сервіс, який покращить вашу подорож у фітнесі</p>
+            <p class="services__text">Підійде як новачкам так і досвідченим спортсменам</p>
+        </section>
 
-        <figure>
-            <a href="https://www.vecteezy.com/png/10135733-fat-women-cardio-exercises-and-fitness-training-concept-for-weight-loss-of-fat-burning"
-                target="_blank"><img src="img/4192x5081_woman_training.png" alt="Зображення жінки, яка тренується"
-                    width="419" height="508"></a>
-            <figcaption>Зображення жінки, яка тренується</figcaption>
-        </figure>
-        <p>Абсолютно безкоштовний сервіс, який покращить вашу подорож у фітнесі</p>
-        <p>Підійде як новачкам так і досвідченим спортсменам</p>
-
-        <h3>Поширені запитання</h3>
-
-        <details>
-            <summary>Як це може допомогти саме мені?</summary>
-            <p>Fitgram надає багато функцій, які можуть бути корисними саме для вас. Але головне це те, що ви зможете
-                легко та швидко вести свою тренувальні програму та відсліковувати прогрес у ваших тренуваннях. Також
-                застосунок надає функцію підсказок, що допомагають вам прогресувати.</p>
-        </details>
-        <details>
-            <summary>Чи можна створити свій індивідуальний план тренувань?</summary>
-            <p>Так! Ви можете самостійно створити план тренувань, додаючи вправи, налаштовуючи кількість підходів,
-                повторень та вагу. Також можна редагувати план у будь-який час.</p>
-        </details>
-        <details>
-            <summary> Які підказки я можу отримати для покращення результатів?</summary>
-            <p>Застосунок надає індивідуальні підказки на основі вашого прогресу та тренувального плану. Це можуть бути
-                поради щодо техніки виконання вправ, корекція навантажень чи поради щодо збільшення ефективності
-                тренувань.</p>
-        </details>
-        <details>
-            <summary>Чи потрібно бути досвідченим спортсменом, щоб користуватися застосунком?</summary>
-            <p>Ні, застосунок підходить як для новачків, так і для досвідчених спортсменів. Ви зможете створити
-                тренувальний план відповідно до свого рівня підготовки.</p>
-        </details>
-        <details>
-            <summary>Чи є в застосунку готові тренувальні плани?</summary>
-            <p>Так, крім можливості створювати власні плани, ви можете обрати з набору готових планів для різних цілей:
-                набір м'язової маси, схуднення, підвищення витривалості тощо.</p>
-        </details>
+        <section class="faq">
+            <h3 class="faq__title">Поширені запитання</h3>
+            <details class="faq__details">
+                <summary class="faq__summary">Як це може допомогти саме мені?</summary>
+                <p class="faq__text">Fitgram надає багато функцій, які можуть бути корисними саме для вас. Але головне
+                    це те, що ви зможете
+                    легко та швидко вести свою тренувальні програму та відсліковувати прогрес у ваших тренуваннях. Також
+                    застосунок надає функцію підсказок, що допомагають вам прогресувати.</p>
+            </details>
+            <details class="faq__details">
+                <summary class="faq__summary">Чи можна створити свій індивідуальний план тренувань?</summary>
+                <p class="faq__text">Так! Ви можете самостійно створити план тренувань, додаючи вправи, налаштовуючи
+                    кількість підходів,
+                    повторень та вагу. Також можна редагувати план у будь-який час.</p>
+            </details>
+            <details class="faq__details">
+                <summary class="faq__summary"> Які підказки я можу отримати для покращення результатів?</summary>
+                <p class="faq__text">Застосунок надає індивідуальні підказки на основі вашого прогресу та тренувального
+                    плану. Це можуть бути
+                    поради щодо техніки виконання вправ, корекція навантажень чи поради щодо збільшення ефективності
+                    тренувань.</p>
+            </details>
+            <details class="faq__details">
+                <summary class="faq__summary">Чи потрібно бути досвідченим спортсменом, щоб користуватися застосунком?
+                </summary>
+                <p class="faq__text">Ні, застосунок підходить як для новачків, так і для досвідчених спортсменів. Ви
+                    зможете створити
+                    тренувальний план відповідно до свого рівня підготовки.</p>
+            </details>
+            <details class="faq__details">
+                <summary class="faq__summary">Чи є в застосунку готові тренувальні плани?</summary>
+                <p class="faq__text">Так, крім можливості створювати власні плани, ви можете обрати з набору готових
+                    планів для різних цілей:
+                    набір м'язової маси, схуднення, підвищення витривалості тощо.</p>
+            </details>
+        </section>
     </main>
 
-    <footer>
-        <p>Copyright &copy; Fitgram</p>
-        <a href="#">Повернутись вверх</a>
+    <footer class="footer">
+        <p class="footer__text">Copyright &copy; Fitgram</p>
+        <a href="#" class="footer__link">Повернутись вверх</a>
     </footer>
 </body>
 

@@ -1,0 +1,180 @@
+// IMPORT VARIABLES
+@import "variables";
+
+// GENERAL STYLES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $secondary-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// HEADER STYLES
+.header {
+  background-color: $primary-color;
+  padding: 20px;
+  text-align: center;
+  &__title {
+    margin: 0;
+    color: $secondary-color;
+    font-size: 2.5rem;
+    @include mq(576px) {
+      text-align: start;
+    }
+  }
+  &__nav {
+    margin-top: 20px;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      @include flex-center;
+      @include mq(576px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    &-item {
+      margin: 0 15px;
+    }
+
+    &-link {
+      color: $secondary-color;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// MAIN CONTENT STYLES
+.main {
+  padding: 20px;
+}
+
+.benefits {
+  margin-bottom: 40px;
+
+  &__title {
+    color: $primary-color;
+    font-size: 2em;
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    @include flex-center;
+    @include mq(992px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    font-size: 1.2em;
+    margin: 50px;
+    padding: 16px;
+    border: 2px solid $primary-color;
+    border-radius: 10px;
+  }
+}
+
+.services {
+  margin-bottom: 40px;
+
+  &__title {
+    color: $primary-color;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__figure {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  &__image {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    @include mq(576px) {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    left: -10000px;
+  }
+
+  &__text {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.faq {
+  margin-bottom: 40px;
+
+  &__title {
+    color: $primary-color;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  &__details {
+    margin-bottom: 20px;
+    border: 1px solid $primary-color;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  &__summary {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: $primary-color;
+  }
+
+  &__text {
+    font-size: 1em;
+    color: $text-color;
+  }
+}
+
+// FOOTER STYLES
+.footer {
+  background-color: $primary-color;
+  padding: 20px;
+  text-align: center;
+
+  &__text {
+    color: $secondary-color;
+    margin: 0;
+  }
+
+  &__link {
+    color: $secondary-color;
+    font-size: 1.2em;
+  }
+}
